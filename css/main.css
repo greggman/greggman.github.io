@@ -1,9 +1,9 @@
 html, body {
     background-color: black;
     color: green;
-    font-family: monospace;
+    font-size: 12pt;
+    font-family: "Lucida Console", Monaco, monospace;
 }
-
 a:link,
 a:visited,
 a:hover,
@@ -13,12 +13,12 @@ a:active {
 
 @-webkit-keyframes blink {
     from, to { background-color: transparent }
-    50% { background-color: #FFF}
+    50% { background-color: #0F0 }
 }
 
 @-moz-keyframes blink {
     from, to { background-color: transparent }
-    50% { bacground-color: #FFF }
+    50% { bacground-color: #0F0 }
 }
 
 .cursor {
@@ -30,9 +30,12 @@ a:active {
     -webkit-animation: 1s blink step-end infinite;
     -moz-animation: 1s blink step-end infinite;
 }
+.shell {
+    color: #0F0 !important;
+}
 
 /* --- Prettify --- */
-pre.prettyprint .nocode { background-color: none; color: #000 }
+pre.prettyprint .nocode { color: #000 }
 pre.prettyprint .str { color: #080 } /* string          */
 pre.prettyprint .kwd { color: #008 } /* keyword         */
 pre.prettyprint .com { color: #800 } /* comment         */
@@ -66,83 +69,13 @@ ol.linenums
     margin-top: 0;
     margin-bottom: 0;
 }
-.prettyprint {
-    background: #000;
-}
-li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9
-{
-    color: #555;
-    list-style-type: decimal;
-}
-li.L1, li.L3, li.L5, li.L7, li.L9 {
-    background: #111;
-}
-@media print
-{
-    .str
-    {
-        color: #060;
-    }
-    .kwd
-    {
-        color: #006;
-        font-weight: bold;
-    }
-    .com
-    {
-        color: #600;
-        font-style: italic;
-    }
-    .typ
-    {
-        color: #404;
-        font-weight: bold;
-    }
-    .lit
-    {
-        color: #044;
-    }
-    .pun
-    {
-        color: #440;
-    }
-    .pln
-    {
-        color: #000;
-    }
-    .tag
-    {
-        color: #006;
-        font-weight: bold;
-    }
-    .atn
-    {
-        color: #404;
-    }
-    .atv
-    {
-        color: #060;
-    }
-}
-
-pre.prettyprint ul.modifiedlines {
-    list-style-type: none;
-    padding-left: 0;
-}
-pre.prettyprint ul.modifiedlines li.linemodified {
-    list-style-type: none;
-    background-color: #DEF;
-}
-
 pre.prettyprint, code.prettyprint {
-    font-size: 12pt;
-    font-family: "Lucida Console", Monaco, monospace;
     width: 95%;
     margin: auto;
     padding: 1em;
     text-align: left;           /* override justify on body */
     goverflow: auto;             /* allow scroll bar in case of long lines - goes together with white-space: nowrap! */
     white-space: pre;        /* was nowrap, prevent line wrapping */
-    line-height: 1.4em;
 }
+
 

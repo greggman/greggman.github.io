@@ -7,8 +7,8 @@
 <link rel="stylesheet" href="css/main.css" type="text/css" />
 </head>
 <body>
+<div class="shell">$ cat > gman.cc</div>
 <pre class="prettyprint">
-$ cat > gman.cc
 #include &lt;<a href="http://greggman.com">greggman.com</a>&gt;
 #include &lt;<a href="http://twitter.com/greggman">@greggman</a>&gt;
 #include &lt;stdlib.h&gt;
@@ -22,10 +22,10 @@ int main(int argc, const char* argv[]) {
 
   return EXIT_SUCCESS;
 }
-^D
-$ g++ -o gman gman.cc
-$ gman<div class="cursor"></div>
 </pre>
+<div class="shell">^D</div>
+<div class="shell">$ g++ -o gman gman.cc</div>
+<div class="shell">$ gman<div class="cursor"></div></div>
 </body>
 <script src="/js/prettify.js"></script>
 <script>
