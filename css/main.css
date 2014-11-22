@@ -1,0 +1,148 @@
+html, body {
+    background-color: black;
+    color: green;
+    font-family: monospace;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+@-webkit-keyframes blink {
+    from, to { background-color: transparent }
+    50% { background-color: #FFF}
+}
+
+@-moz-keyframes blink {
+    from, to { background-color: transparent }
+    50% { bacground-color: #FFF }
+}
+
+.cursor {
+    display: inline-block;
+    position: relative;
+    top: 0.2em;
+    width:0.6em;
+    height:1em;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+}
+
+/* --- Prettify --- */
+pre.prettyprint .nocode { background-color: none; color: #000 }
+pre.prettyprint .str { color: #080 } /* string          */
+pre.prettyprint .kwd { color: #008 } /* keyword         */
+pre.prettyprint .com { color: #800 } /* comment         */
+pre.prettyprint .typ { color: #606 } /* type            */
+pre.prettyprint .lit { color: #066 } /* literal         */
+pre.prettyprint .pun { color: #660 } /* punctuation     */
+pre.prettyprint .pln { color: #000 } /* plaintext       */
+pre.prettyprint .tag { color: #008 } /* html/xml tag    */
+pre.prettyprint .atn { color: #606 } /* attribute name  */
+pre.prettyprint .atv { color: #080 } /* attribute value */
+pre.prettyprint .dec { color: #606 } /* decimal         */
+pre.prettyprint .var { color: #606 } /* variable name   */
+pre.prettyprint .fun { color: #F00 } /* function name   */
+
+
+pre.prettyprint .str {    color: #EC7600; }
+pre.prettyprint .kwd {    color: #93C763; }
+pre.prettyprint .com {    color: #66747B; }
+pre.prettyprint .typ {    color: #678CB1; }
+pre.prettyprint .lit {    color: #FACD22; }
+pre.prettyprint .pun {    color: #F1F2F3; }
+pre.prettyprint .pln {    color: #F1F2F3; }
+pre.prettyprint .tag {    color: #8AC763; }
+pre.prettyprint .atn {    color: #E0E2E4; }
+pre.prettyprint .atv {    color: #EC7600; }
+pre.prettyprint .dec {    color: purple; }
+
+
+ol.linenums
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.prettyprint {
+    background: #000;
+}
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9
+{
+    color: #555;
+    list-style-type: decimal;
+}
+li.L1, li.L3, li.L5, li.L7, li.L9 {
+    background: #111;
+}
+@media print
+{
+    .str
+    {
+        color: #060;
+    }
+    .kwd
+    {
+        color: #006;
+        font-weight: bold;
+    }
+    .com
+    {
+        color: #600;
+        font-style: italic;
+    }
+    .typ
+    {
+        color: #404;
+        font-weight: bold;
+    }
+    .lit
+    {
+        color: #044;
+    }
+    .pun
+    {
+        color: #440;
+    }
+    .pln
+    {
+        color: #000;
+    }
+    .tag
+    {
+        color: #006;
+        font-weight: bold;
+    }
+    .atn
+    {
+        color: #404;
+    }
+    .atv
+    {
+        color: #060;
+    }
+}
+
+pre.prettyprint ul.modifiedlines {
+    list-style-type: none;
+    padding-left: 0;
+}
+pre.prettyprint ul.modifiedlines li.linemodified {
+    list-style-type: none;
+    background-color: #DEF;
+}
+
+pre.prettyprint, code.prettyprint {
+    font-size: 12pt;
+    font-family: "Lucida Console", Monaco, monospace;
+    width: 95%;
+    margin: auto;
+    padding: 1em;
+    text-align: left;           /* override justify on body */
+    goverflow: auto;             /* allow scroll bar in case of long lines - goes together with white-space: nowrap! */
+    white-space: pre;        /* was nowrap, prevent line wrapping */
+    line-height: 1.4em;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=yes">
+  <title>Greggman</title>
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+</head>
+<body>
+<pre class="prettyprint">
+$ cat > gman.cc
+#include &lt;<a href="http://greggman.com">greggman.com</a>&gt;
+#include &lt;<a href="http://twitter.com/greggman">@greggman</a>&gt;
+#include &lt;stdlib.h&gt;
+
+int main(int argc, const char* argv[]) {
+
+  bool alive = true;
+  while(alive) {
+    <a href="https://github.com/greggman?tab=repositories">DoAwesomeStuff</a>();
+  }
+
+  return EXIT_SUCCESS;
+};
+^D
+$ g++ -o gman gman.cc
+$ gman<div class="cursor"></div>
+</pre>
+</body>
+<script src="/js/jquery-1.7.1.min.js"></script>
+<script src="/js/prettify.js"></script>
+<script>
+$(document).ready(function($){
+  prettyPrint();
+});
+</script>
+</html>
